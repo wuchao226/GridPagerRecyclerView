@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_second"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp" />
+
+    <com.wuc.gridpagerrecyclerview.indicator.LinePageIndicator
+        android:id="@+id/line_page_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:selectedColor="@color/colorAccent" />
+
+    <com.wuc.gridpagerrecyclerview.indicator.CirclePageIndicator
+        android:id="@+id/circle_page_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="5dip"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dip"
+        android:paddingBottom="5dp"
+        app:fillColor="@android:color/holo_red_light"
+        app:pageColor="#8A9BA9"
+        app:radius="5dip"
+        app:strokeWidth="0dip" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
